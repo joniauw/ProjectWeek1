@@ -1,4 +1,4 @@
-package gui;
+package domain;
 
 public class Punt {
     private int x;
@@ -17,9 +17,10 @@ public class Punt {
         return y;
     }
 
-    public boolean equals(Punt punt){
-        if(punt == null ) return false;
-        return x == punt.x && y == punt.y;
+    @Override
+    public boolean equals(Object punt){
+        if(punt == null || !(punt instanceof Punt)) return false;
+        return x == ((Punt)punt).x && y == ((Punt)punt).y;
 
     }
 
