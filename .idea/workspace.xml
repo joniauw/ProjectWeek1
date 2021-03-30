@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 06 - Doener Filip, denker Filip">
-      <change afterPath="$PROJECT_DIR$/src/ui/DriehoekApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FxDriehoekApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 06 - Doener Filip, denker Filip met TODO" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617106384427</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Story 06 - Doener Filip, denker Filip met TODO">
+      <created>1617109960007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617109960007</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,65 +201,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="434" y="208" key="#Notifications" timestamp="1617106986458">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="434" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1617106986458" />
-    <state x="393" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617093655089">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="393" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1617093655089" />
-    <state x="384" y="133" key="FileChooserDialogImpl" timestamp="1617107315139">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="384" y="133" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1617107315139" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1617107097299">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1617107097299">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1617107097298">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1617107097298" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1617107097299">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
-    <state x="158" y="0" key="SettingsEditor" timestamp="1617106842393">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="158" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1617106842393" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617095799216">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617095799216" />
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617107097561">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1617107097561" />
-    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617090346806">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.768@0.0.1366.768" timestamp="1617090346806" />
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617107032217">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1617107032217" />
-    <state x="65" y="4" key="new project wizard" timestamp="1617107320988">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="65" y="4" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1617107320988" />
-    <state x="526" y="141" key="refactoring.ChangeSignatureDialog" timestamp="1617097377732">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="526" y="141" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1617097377732" />
+    <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Story 06 - Doener Filip, denker Filip met TODO" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
