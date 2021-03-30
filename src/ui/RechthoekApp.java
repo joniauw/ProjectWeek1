@@ -61,8 +61,8 @@ public class RechthoekApp {
             try {
                 Integer.parseInt(tfb.getText());
 
-                root.add(lh, 0, 2);
-                root.add(tfh, 1, 2);
+                root.add(lh, 0, 3);
+                root.add(tfh, 1, 3);
             }
             catch(Exception ex){
                 tfb.clear();
