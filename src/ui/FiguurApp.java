@@ -1,11 +1,9 @@
 package ui;
 
-import domain.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.*;
+import javafx.scene.control.ComboBox;
 import javafx.scene.layout.GridPane;
-import javafx.scene.text.Text;
 
 public class FiguurApp {
     private ComboBox<String> keuzeMenu;
@@ -23,11 +21,12 @@ public class FiguurApp {
                         } else if (keuzeMenu.getValue().equals("Rechthoek")) {
                             new RechthoekApp(root);
                         } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
-                            new LijnstukApp(root);
+                            new LijnStukApp(root);
+                        }
                         //} else if (keuzeMenu.getValue().equals("Lijnstuk")) {
                         //    new DriehoekApp(root);
                         //}
                     }
-		});
-    }
+		        });
+        }
 }
