@@ -20,32 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Robin De Koninck - Aaron Zwings&#10;Story 5">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/Cirkel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/Punt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/Speler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/Vorm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/test/AllTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/test/CirkelTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/test/PuntTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/test/SpelerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/CirkelApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/FxCirkelApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/FxPuntApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/FxSpelerApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/PuntApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/ui/SpelerApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/LijnStukApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/LijnStuk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/domain/LijnStuk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectWeek1/test/LijnStukTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectWeek1/test/LijnStukTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FiguurApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FiguurApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/Tekening.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TekeningTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/FxTekeningApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TekeningApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/VormMakenApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/CirkelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirkelApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617090005085</updated>
-      <workItem from="1617090007439" duration="5619000" />
+      <workItem from="1617090007439" duration="8951000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -175,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617093599641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
+      <created>1617095796139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617095796140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,10 +213,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="158" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1617092365558" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617093613141">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617095799216">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617093613141" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617095799216" />
     <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617090346806">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -237,5 +225,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1617094091232" />
+    <state x="526" y="141" key="refactoring.ChangeSignatureDialog" timestamp="1617097377732">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="526" y="141" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1617097377732" />
   </component>
 </project>
