@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Robin De Koninck - Aaron Zwings&#10;Story 5">
-      <change afterPath="$PROJECT_DIR$/src/domain/Tekening.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TekeningTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FxTekeningApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/TekeningApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/VormMakenApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CirkelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirkelApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1qT3xXWKzLP7oiu22AutsRTLxwA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,10 +63,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="JUnit.LijnStukTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -140,6 +136,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\z5929\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="" />
@@ -147,7 +146,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617090005085</updated>
-      <workItem from="1617090007439" duration="8951000" />
+      <workItem from="1617090007439" duration="9691000" />
+      <workItem from="1617107177623" duration="154000" />
+      <workItem from="1617107473173" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -163,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617095796140</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
+      <created>1617106384426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617106384427</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,52 +187,65 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
     <option name="LAST_COMMIT_MESSAGE" value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="434" y="208" key="#Notifications" timestamp="1617106986458">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1617106986458" />
     <state x="393" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617093655089">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="393" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1617093655089" />
-    <state x="384" y="133" key="FileChooserDialogImpl" timestamp="1617092337415">
+    <state x="384" y="133" key="FileChooserDialogImpl" timestamp="1617107315139">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="384" y="133" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1617092337415" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1617095653273">
+    <state x="384" y="133" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1617107315139" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1617107097299">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1617095653273" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1617095653272">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1617107097299">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1617095653272" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1617095653272">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1617107097298">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1617095653272" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1617095653273">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1617107097298" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1617107097299">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1617095653273" />
-    <state x="158" y="0" key="SettingsEditor" timestamp="1617092365558">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1617107097299" />
+    <state x="158" y="0" key="SettingsEditor" timestamp="1617106842393">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="158" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1617092365558" />
+    <state x="158" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1617106842393" />
     <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617095799216">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617095799216" />
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617107097561">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1617107097561" />
     <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617090346806">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.768@0.0.1366.768" timestamp="1617090346806" />
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617094091232">
+    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617107032217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1617094091232" />
+    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1617107032217" />
+    <state x="65" y="4" key="new project wizard" timestamp="1617107320988">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="65" y="4" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1617107320988" />
     <state x="526" y="141" key="refactoring.ChangeSignatureDialog" timestamp="1617097377732">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
