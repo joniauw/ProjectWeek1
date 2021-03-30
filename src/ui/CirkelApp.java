@@ -55,6 +55,7 @@ public class CirkelApp {
                 tekening.voegToe(vorm);
                 cleanUp(root);
 
+
             } catch (NumberFormatException ne){
                 invoerStraal.clear();
                 foutenboodschap.setTitle("Warning");
