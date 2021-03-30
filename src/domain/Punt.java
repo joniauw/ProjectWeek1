@@ -1,6 +1,6 @@
 package domain;
 
-public class Punt {
+public class Punt implements Comparable {
     private int x;
     private int y;
 
@@ -24,8 +24,21 @@ public class Punt {
 
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return compareTo((Punt)o);
+    }
+
+    public int compareTo(Punt punt) {
+        if (punt.x < x || (punt.x >= x && punt.y < y)) {
+            return -1;
+        } else if ( x == punt.x && y == punt.y) {
+            return 0;
+        }
+        return 1;
+    }
+
     public String toString(){
         return "(" + x + "," + y + ")";
     }
-
 }
