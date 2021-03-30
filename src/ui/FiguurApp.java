@@ -23,9 +23,9 @@ public class FiguurApp {
                         } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
                             new LijnStukApp(root);
                         }
-                        //} else if (keuzeMenu.getValue().equals("Lijnstuk")) {
-                        //    new DriehoekApp(root);
-                        //}
+                        } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
+                            new DriehoekApp(root);
+                        }
                     }
 		        });
         }

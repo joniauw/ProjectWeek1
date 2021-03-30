@@ -22,7 +22,7 @@ public class RechthoekApp {
         Label lh = new Label("Geef de hoogte in voor de rechthoek");
         TextField tfh = new TextField();
 
-        root.add(lx, 0, 0);
+        root.add(lx,  0, 0);
         root.add(tfx, 1, 0);
 
         tfx.setOnAction(e -> {
@@ -75,7 +75,7 @@ public class RechthoekApp {
 
         tfh.setOnAction(e -> {
             try {
-                Vorm rechthoek = new Rechthoek(new Punt(Integer.parseInt(tfx.getText()), Integer.parseInt(tfy.getText())), Integer.parseInt(tfb.getText()), Integer.parseInt(tfh.getText()));
+                Rechthoek rechthoek = new Rechthoek(new Punt(Integer.parseInt(tfx.getText()), Integer.parseInt(tfy.getText())), Integer.parseInt(tfb.getText()), Integer.parseInt(tfh.getText()));
                 root.getChildren().clear();
 
                 Text uitvoer = new Text();
