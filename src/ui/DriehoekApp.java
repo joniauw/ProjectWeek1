@@ -1,14 +1,20 @@
 package ui;
 
+import domain.Driehoek;
+import domain.Punt;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 
 public class DriehoekApp {
     private Alert foutenboodschap = new Alert(Alert.AlertType.WARNING);
 
     public DriehoekApp(GridPane root) {
+        //het idee achter deze labels & textfields is dat het 1 per 1 de inputs aan u geeft, zodat je gemakkelijker kan begrijpen waar de error zit
+        //bvb: lax & tfax zijn de javafx onderdelen die instaan voor het aan de gebruiker duidelijk maken dat die de x coordinaat van de eerste driehoek meegeeft
+
         Label lax = new Label("Geef de x coordinaat in voor het eerste hoekpunt van de driehoek");
         TextField tfax = new TextField();
         Label lay = new Label("Geef de y coordinaat in voor het eerste hoekpunt van de driehoek");
@@ -25,7 +31,13 @@ public class DriehoekApp {
         root.add(lax, 0, 0);
         root.add(tfax, 1, 0);
 
-        // TODO: 30/03/2021   Onderstaande code graag eens nakijken aub
+        //setOnAction is een functie die een anonieme functie als parameter neemt (of een lambda expressie, dat betekent hetzelfde)
+        //bij textfields wordt deze uitgeroepen als je op enter drukt terwijl die textbox gefocust is
+        //we roepen hierin aan dat ze de volgende kolom moeten weergeven, maar ook dat ze de geldigheid van de eerste kolom nakijken
+        //try/catch vangt exceptions up, en we weten dat parseInt een numberformatexception geeft indien het geen getal binnenkrijgt, dus die vangen we op & daar geven we dan een alert voor
+        //deze volgende paar lijnen zijn definities voor wat er gebeurt als er op enter wordt gedrukt, en ze zien er allemaal een beetje hetzelfde uit. parseInt check -> voeg toe of geef alert
+        //bij de laatste is het wat ingewikkelder, ik zal daar ook een voetnoot bijschrijven
+        //overal had je deze code al goed geschreven, enkel had je een aantal textfields door elkaar gehaald. Mijn naming scheme is nogal kortaf, dus als je deze wilt aanpassen naar meer verbose namen is dat ook goed
 
         // 1ste x
         tfax.setOnAction(e -> {
@@ -79,7 +91,7 @@ public class DriehoekApp {
         });
 
         // 2de y
-        tfay.setOnAction(e -> {
+        tfby.setOnAction(e -> {
             try {
                 Integer.parseInt(tfbx.getText());
 
@@ -87,7 +99,7 @@ public class DriehoekApp {
                 root.add(tfcx, 1, 5);
             }
             catch(Exception ex) {
-                tfcy.clear();
+                tfby.clear();
 
                 foutenboodschap.setTitle("Foute tweede y");
                 foutenboodschap.setContentText("Je moet een getal ingeven voor de tweede y waarde");
@@ -96,12 +108,12 @@ public class DriehoekApp {
         });
 
         //3de x
-        tfbx.setOnAction(e -> {
+        tfcx.setOnAction(e -> {
             try {
                 Integer.parseInt(tfbx.getText());
 
-                root.add(lby, 0, 4);
-                root.add(tfby, 1, 4);
+                root.add(lcy, 0, 6);
+                root.add(tfcy, 1, 6);
             }
             catch(Exception ex) {
                 tfbx.clear();
@@ -112,13 +124,20 @@ public class DriehoekApp {
             }
         });
 
+        //hier proberen we een nieuwe driehoek aan te maken. In dit geval mag je try catch een beetje uitgebreider zijn, dat je gemakkelijker de fout kan opsporen, maar dit is niet persé nodig hier
+        //root.getChildren geeft je de directe lijst in root's gegevens terug, dus kan je deze clearen & root's children wipen
+        //de rest is vrij vanzelfsprekend
+        //indien er nog vragen zijn, stel ze mij of een coach gerust
         // 3de y
-        tfay.setOnAction(e -> {
+        tfcy.setOnAction(e -> {
             try {
-                Integer.parseInt(tfbx.getText());
+                Driehoek driehoek = new Driehoek(new Punt(Integer.parseInt(tfax.getText()), Integer.parseInt(tfay.getText())),
+                        new Punt(Integer.parseInt(tfbx.getText()), Integer.parseInt(tfby.getText())),
+                        new Punt(Integer.parseInt(tfcx.getText()), Integer.parseInt(tfcy.getText())));
 
-                root.add(lcx, 0, 5);
-                root.add(tfcx, 1, 5);
+                root.getChildren().clear();
+                Text t = new Text(driehoek.toString());
+                root.add(t, 0, 0);
             }
             catch(Exception ex) {
                 tfcy.clear();

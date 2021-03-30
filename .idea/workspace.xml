@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 06 - Doener Filip, denker Filip met TODO" />
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 06 - Doener Filip, denker Filip met TODO">
+      <change beforePath="$PROJECT_DIR$/.idea/ProjectWeek1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectWeek1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Driehoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Driehoek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/DriehoekApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DriehoekApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,13 +78,15 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="JUnit.LijnStukTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,6 +210,16 @@
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
     <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
     <option name="LAST_COMMIT_MESSAGE" value="Story 06 - Doener Filip, denker Filip met TODO" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="434" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617114877831">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="743" y="434" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1617114877831" />
+    <state x="664" y="432" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617113630789">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="664" y="432" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1617113630789" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
