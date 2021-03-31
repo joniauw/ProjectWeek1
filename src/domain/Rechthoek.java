@@ -1,6 +1,7 @@
 package domain;
 
 import java.util.Objects;
+import domain.Punt;
 
 public class Rechthoek extends Vorm {
     private int breedte, hoogte;

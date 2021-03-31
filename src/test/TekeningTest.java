@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-/*
+
 public class TekeningTest {
     private Vorm gebouw;
     private Vorm dak;
@@ -140,4 +140,3 @@ public class TekeningTest {
 
 }
 
- */
