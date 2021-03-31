@@ -2,7 +2,6 @@ package domain;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Objects;
 
 public class Driehoek extends Vorm {
@@ -48,12 +47,16 @@ public class Driehoek extends Vorm {
         // -1 => 2 komt na 1, blijft onverandert
         // 0 => kijken naar y-waarde
         // 1 => 1 komt na 2, volgorde wisselt
+
+        //we beginnen met een lijst aan te maken die we gaan sorteren, en we voegen alle hoekpunten hieraan toe
         ArrayList <Punt> puntenLijst = new ArrayList<>();
 
         puntenLijst.add(hoekPunt1);
         puntenLijst.add(hoekPunt2);
         puntenLijst.add(hoekPunt3);
 
+        //we steunen op de Comparable interface zijn toCompare methode hier om alle elementen te sorteren
+        //na het sorteren weten we dat de waarden in puntenLijst gesorteerd zijn, en geven we deze gesorteerde lijst terug aan de hoekpunten
         Collections.sort(puntenLijst);
 
         hoekPunt1 = puntenLijst.get(0);
@@ -69,8 +72,9 @@ public class Driehoek extends Vorm {
     }
 
     public String toString() {
-        return "Driehoek: Hoekpunt 1: (" + hoekPunt1.getX() + ", " + hoekPunt1.getY() +
-                ") - Hoekpunt 2: (" + hoekPunt2.getX() + ", "+ hoekPunt2.getY() +
-                ") - Hoekpunt 3: (" + hoekPunt3.getX() + ", "+ hoekPunt3.getY() + ")";
+        //licht herschreven omdat steunen op Punt.toString een beetje veiliger is! Addities aan de Punt klasse moet dan maar op 1 plek aangepast worden
+        return "Driehoek: Hoekpunt 1: " + hoekPunt1.toString() +
+                " - Hoekpunt 2: " + hoekPunt2.toString() +
+                " - Hoekpunt 3: " + hoekPunt3.toString();
     }
 }

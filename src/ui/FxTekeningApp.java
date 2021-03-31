@@ -12,7 +12,7 @@ public class FxTekeningApp extends Application {
     public void start(Stage primaryStage) {
         GridPane root = new GridPane();
         Scene scene = new Scene(root);
-        new TekeningApp(root);
+        //new TekeningApp(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Almost hangman :) ");
         primaryStage.show();

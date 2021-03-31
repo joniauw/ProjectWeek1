@@ -1,12 +1,12 @@
-package ui;
-
-import static org.junit.Assert.*;
+package test;
 
 import domain.DomainException;
 import domain.Punt;
 import domain.Rechthoek;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class RechthoekTest {
 
