@@ -1,6 +1,6 @@
 package domain;
 
-public class LijnStuk {
+public class LijnStuk extends Vorm {
     private Punt startPunt;
     private Punt eindPunt;
 
@@ -8,11 +8,11 @@ public class LijnStuk {
         setStartEnEindPunt(startpunt, eindpunt);
     }
 
-    private void setStartEnEindPunt(Punt startpunt, Punt eindpunt){
-        if(startpunt == null || eindpunt == null){
+    private void setStartEnEindPunt(Punt startpunt, Punt eindpunt) {
+        if (startpunt == null || eindpunt == null) {
             throw new DomainException("Start of eindpunt mag niet null zijn");
         }
-        if(startpunt == eindpunt){
+        if (startpunt == eindpunt) {
             throw new DomainException("Startpunt is gelijk aan eindpunt");
         }
         this.startPunt = startpunt;
@@ -27,7 +27,7 @@ public class LijnStuk {
         return this.eindPunt;
     }
 
-    public boolean equals(Object o){
+    public boolean equals(Object o) {
         if (!(o instanceof LijnStuk)) return false;
         else {
             LijnStuk lijnStuk = (LijnStuk) o;
@@ -36,8 +36,14 @@ public class LijnStuk {
         }
     }
 
-    public String toString(){
+    public String toText() {
         return "Lijn: startpunt: " + startPunt + " - eindpunt: " + eindPunt;
+    }
+
+    public Omhullende getOmhullende() {
+        Punt nieuwStartpunt = new Punt(Math.min(startPunt.getX(), eindPunt.getX()), Math.min(startPunt.getY(), eindPunt.getY()));
+
+        return new Omhullende(nieuwStartpunt, Math.abs(eindPunt.getX() - startPunt.getX()), Math.abs(eindPunt.getY() - startPunt.getY()));
     }
 
 }

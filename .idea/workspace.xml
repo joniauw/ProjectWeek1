@@ -19,17 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 06 - Doener Filip, denker Filip met TODO">
-      <change afterPath="$PROJECT_DIR$/src/db/WoordenLezer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/WoordenLijst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/WoordenLijstTest.java" afterDir="false" />
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 13 - Doener Filip, denker Willem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Tekening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Tekening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TekeningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TekeningTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CirkelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirkelApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FxTekeningApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FxTekeningApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TekeningApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TekeningApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/VormMakenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VormMakenApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Cirkel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Cirkel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Driehoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Driehoek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/LijnStuk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/LijnStuk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Rechthoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Rechthoek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Vorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Vorm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617109960007</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Story 13 - Doener Filip, denker Willem">
+      <created>1617178322069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617178322070</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +250,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
     <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Story 06 - Doener Filip, denker Filip met TODO" />
+    <MESSAGE value="Story 13 - Doener Filip, denker Willem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Story 13 - Doener Filip, denker Willem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

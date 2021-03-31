@@ -43,8 +43,14 @@ public class Cirkel extends Vorm {
         return Objects.hash(radius, middelpunt);
     }
 
-    @Override
-    public String toString() {
+    public String toText() {
         return "Cirkel: middelpunt: " +  middelpunt.toString() + " - straal: " + radius;
     }
+
+    public Omhullende getOmhullende() {
+        Punt nieuwStartpunt = new Punt(middelpunt.getX() - radius, middelpunt.getY() - radius);
+
+        return new Omhullende(nieuwStartpunt, radius * 2, radius * 2);
+    }
+
 }

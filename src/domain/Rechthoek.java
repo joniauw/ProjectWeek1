@@ -56,12 +56,10 @@ public class Rechthoek extends Vorm {
         return Objects.hash(breedte, hoogte, linkerbovenhoek);
     }
 
-    @Override
-    public String toString() {
+    public String toText() {
         return "Rechthoek: linkerbovenhoek: " + linkerbovenhoek.toString() +
                 " - breedte: " + breedte +
-                " - hoogte: " + hoogte + "\n" +
-                getOmhullende().toString();
+                " - hoogte: " + hoogte;
     }
 
     public Omhullende getOmhullende() {
