@@ -11,6 +11,7 @@ public class Tekening {
     public static final int MIN_Y = 0;
     public static final int MAX_Y = 399;
 
+
     public Tekening(String naamTekening) {
         if(!isValidNaam(naamTekening)){
             throw new IllegalArgumentException("naam van de tekening is null of leeg");
