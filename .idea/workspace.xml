@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Robin De Koninck - Aaron Zwings&#10;Story 8">
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 13 - Doener Filip, denker Willem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Cirkel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Cirkel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Driehoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Driehoek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/LijnStuk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/LijnStuk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Rechthoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Rechthoek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Tekening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Tekening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TekeningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TekeningTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Vorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Vorm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TekeningTest.Tekening_moet_een_tekening_aanmaken_met_een_geldige_naam_en_0_vormen">
+  <component name="RunManager" selected="JUnit.WoordenLijstTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -137,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TekeningTest.Tekening_moet_een_tekening_aanmaken_met_een_geldige_naam_en_0_vormen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LijnStukTest.equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectWeek1" />
       <extension name="coverage">
         <pattern>
@@ -146,24 +147,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TekeningTest" />
-      <option name="METHOD_NAME" value="Tekening_moet_een_tekening_aanmaken_met_een_geldige_naam_en_0_vormen" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TekeningTest.Tekening_moet_exception_gooien_als_naam_null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectWeek1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TekeningTest" />
-      <option name="METHOD_NAME" value="Tekening_moet_exception_gooien_als_naam_null" />
+      <option name="MAIN_CLASS_NAME" value="test.LijnStukTest" />
+      <option name="METHOD_NAME" value="equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +171,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TekeningTest.Tekening_moet_een_tekening_aanmaken_met_een_geldige_naam_en_0_vormen" />
-        <item itemvalue="JUnit.TekeningTest.Tekening_moet_exception_gooien_als_naam_null" />
-        <item itemvalue="JUnit.CirkelTest" />
         <item itemvalue="JUnit.WoordenLijstTest" />
         <item itemvalue="JUnit.LijnStukTest" />
+        <item itemvalue="JUnit.CirkelTest" />
+        <item itemvalue="JUnit.LijnStukTest.equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +192,6 @@
       <workItem from="1617090007439" duration="9691000" />
       <workItem from="1617107177623" duration="154000" />
       <workItem from="1617107473173" duration="162000" />
-      <workItem from="1617180008612" duration="4249000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -238,12 +221,12 @@
       <option name="project" value="LOCAL" />
       <updated>1617109960007</updated>
     </task>
-    <task id="LOCAL-00005" summary="idk">
-      <created>1617178591897</created>
+    <task id="LOCAL-00005" summary="Story 13 - Doener Filip, denker Willem">
+      <created>1617178322069</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1617178591897</updated>
+      <updated>1617178322070</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
@@ -267,18 +250,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
     <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
-    <MESSAGE value="idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="321" y="145" key="MultipleFileMergeDialog" timestamp="1617178506942">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1617178506942" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617178594373">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617178594373" />
+    <MESSAGE value="Story 13 - Doener Filip, denker Willem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Story 13 - Doener Filip, denker Willem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

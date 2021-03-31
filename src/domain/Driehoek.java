@@ -49,7 +49,7 @@ public class Driehoek extends Vorm {
         // 1 => 1 komt na 2, volgorde wisselt
 
         //we beginnen met een lijst aan te maken die we gaan sorteren, en we voegen alle hoekpunten hieraan toe
-        ArrayList <Punt> puntenLijst = new ArrayList<>();
+        ArrayList<Punt> puntenLijst = new ArrayList<>();
 
         puntenLijst.add(hoekPunt1);
         puntenLijst.add(hoekPunt2);
@@ -71,10 +71,31 @@ public class Driehoek extends Vorm {
         return Objects.equals(hoekPunt1, driehoek.hoekPunt1) && Objects.equals(hoekPunt2, driehoek.hoekPunt2) && Objects.equals(hoekPunt3, driehoek.hoekPunt3);
     }
 
-    public String toString() {
-        //licht herschreven omdat steunen op Punt.toString een beetje veiliger is! Addities aan de Punt klasse moet dan maar op 1 plek aangepast worden
+    public String toText() {
         return "Driehoek: Hoekpunt 1: " + hoekPunt1.toString() +
                 " - Hoekpunt 2: " + hoekPunt2.toString() +
                 " - Hoekpunt 3: " + hoekPunt3.toString();
+    }
+
+    public Omhullende getOmhullende() {
+        // StartPunt bepalen
+        int minimumX = Math.min(hoekPunt1.getX(), hoekPunt2.getX());
+        int minimumY = Math.min(hoekPunt1.getY(), hoekPunt2.getY());
+        minimumX = Math.min(minimumX, hoekPunt3.getX());
+        minimumY = Math.min(minimumY, hoekPunt3.getY());
+
+        // EindPunt bepalen
+        int maximumX = Math.max(hoekPunt1.getX(), hoekPunt2.getX());
+        int maximumY = Math.max(hoekPunt1.getY(), hoekPunt2.getY());
+        maximumX = Math.max(maximumX, hoekPunt3.getX());
+        maximumY = Math.max(maximumY, hoekPunt3.getY());
+
+        // Lijnstuk maken
+        Punt nieuwStartpunt = new Punt(minimumX, minimumY);
+        Punt eindPunt = new Punt(maximumX, maximumY);
+
+        LijnStuk nieuwLijnstuk = new LijnStuk(nieuwStartpunt, eindPunt);
+
+        return nieuwLijnstuk.getOmhullende();
     }
 }
