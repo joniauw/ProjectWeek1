@@ -1,7 +1,7 @@
 package domain;
 
 public class Tekening {
-
+/*
     public Tekening(String naamTekening) {
     }
 
@@ -22,4 +22,6 @@ public class Tekening {
 
     public void verwijder(Vorm schouwNietInTekening) {
     }
+
+ */
 }
