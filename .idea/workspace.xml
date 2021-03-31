@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Robin De Koninck - Aaron Zwings&#10;Story 5">
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Robin De Koninck - Aaron Zwings&#10;Story 8 - begin">
+      <change beforePath="$PROJECT_DIR$/.idea/ProjectWeek1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectWeek1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +150,7 @@
       <workItem from="1617090007439" duration="9691000" />
       <workItem from="1617107177623" duration="154000" />
       <workItem from="1617107473173" duration="162000" />
+      <workItem from="1617107678927" duration="879000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -171,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617106384427</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Robin De Koninck - Aaron Zwings&#10;Story 8 - begin">
+      <created>1617107869051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617107869051</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Robin De Koninck - Aaron Zwings&#10;Story 8 - begin">
+      <created>1617107935272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617107935272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +207,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
+    <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 8 - begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Robin De Koninck - Aaron Zwings&#10;Story 8 - begin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="208" key="#Notifications" timestamp="1617106986458">
@@ -226,18 +243,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="158" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1617106842393" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617095799216">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1617107939057">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617095799216" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1617107939057" />
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617107097561">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1617107097561" />
-    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617090346806">
+    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1617108009166">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.768@0.0.1366.768" timestamp="1617090346806" />
+    <state x="387" y="276" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.768@0.0.1366.768" timestamp="1617108009166" />
     <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617107032217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
