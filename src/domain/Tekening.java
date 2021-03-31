@@ -1,11 +1,12 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tekening {
 
     private String naam;
-    private List<Vorm> vormen;
+    private List<Vorm> vormen = new ArrayList<>();
     public static final int MIN_X = 0;
     public static final int MAX_X = 399;
     public static final int MIN_Y = 0;
@@ -58,8 +59,4 @@ public class Tekening {
     public String toString(){
         return "";
     }
-
-
-
-
 }
