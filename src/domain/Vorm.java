@@ -2,9 +2,9 @@ package domain;
 
 import javafx.scene.paint.Color;
 
-public abstract class Vorm {
-    private Color kleur;
-    private boolean zichtbaar;
+public abstract class Vorm implements Drawable {
+    private Color kleur = Color.WHITE;
+    private boolean zichtbaar = true;
 
     @Override
     public String toString() {

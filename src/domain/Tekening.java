@@ -1,9 +1,11 @@
 package domain;
 
+import javafx.scene.layout.Pane;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tekening {
+public class Tekening implements Drawable {
 
     private String naam;
     private List<Vorm> vormen = new ArrayList<>();
@@ -83,5 +85,13 @@ public class Tekening {
             s += v.toString() + "\n";
         }
         return "Tekening:\n" + s;
+    }
+
+    @Override
+    public void teken(Pane pane) {
+        for (Vorm v : vormen) {
+            if (v.isZichtbaar())
+                v.teken(pane);
+        }
     }
 }

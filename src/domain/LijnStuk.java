@@ -1,5 +1,8 @@
 package domain;
 
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Line;
+
 public class LijnStuk extends Vorm {
     private Punt startPunt;
     private Punt eindPunt;
@@ -46,4 +49,11 @@ public class LijnStuk extends Vorm {
         return new Omhullende(nieuwStartpunt, Math.abs(eindPunt.getX() - startPunt.getX()), Math.abs(eindPunt.getY() - startPunt.getY()));
     }
 
+    @Override
+    public void teken(Pane pane) {
+        Line lijn = new Line(startPunt.getX(), startPunt.getY(), eindPunt.getX(), eindPunt.getY());
+        lijn.setStrokeWidth(5);
+        lijn.setFill(getKleur());
+        pane.getChildren().add(lijn);
+    }
 }
