@@ -22,4 +22,8 @@ public class WoordenLezer {
     public WoordenLijst getGelezenLijst() {
         return gelezenLijst;
     }
+
+    public String lees() {
+        return gelezenLijst.getRandomWoord();
+    }
 }
