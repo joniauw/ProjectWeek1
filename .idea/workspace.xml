@@ -19,22 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 9 + bugfixes - Doener Filip, denker Willem">
-      <change afterPath="$PROJECT_DIR$/src/domain/HangMan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/HangManTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FxHangManApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FxTekenHangManApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/HangManApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/TekeningHangMan.java" afterDir="false" />
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="THE END">
+      <change afterPath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/formulier.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CirkelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirkelApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/DriehoekApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DriehoekApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FiguurApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FiguurApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FxFiguurApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LijnStukApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LijnStukApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/RechthoekApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/RechthoekApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TekenVenster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TekenVenster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TekeningApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TekeningApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -137,13 +125,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,7 +207,8 @@
       <workItem from="1617090007439" duration="9691000" />
       <workItem from="1617107177623" duration="154000" />
       <workItem from="1617107473173" duration="162000" />
-      <workItem from="1617265782438" duration="9748000" />
+      <workItem from="1617265782438" duration="10665000" />
+      <workItem from="1617280861936" duration="981000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -261,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617184198913</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="THE END">
+      <created>1617275886154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617275886154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +283,8 @@
     <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
     <MESSAGE value="Story 13 - Doener Filip, denker Willem" />
     <MESSAGE value="Story 9 + bugfixes - Doener Filip, denker Willem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Story 9 + bugfixes - Doener Filip, denker Willem" />
+    <MESSAGE value="THE END" />
+    <option name="LAST_COMMIT_MESSAGE" value="THE END" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

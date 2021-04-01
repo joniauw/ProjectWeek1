@@ -1,0 +1,193 @@
+/*
+COLORS
+
+Orange: hsla(26, 100%, 71%, 1.0)
+Yellow: hsla(52, 68%, 60%, 1.0)
+Yellowish white: hsla(52, 68%, 89%, 1.0)
+White: hsla(0, 100%, 100%, 1.0)
+Black: hsla(0, 0%, 0%, 1.0)
+Red: hsl(0, 100%, 50%)
+Dark red: hsl(0, 100%, 25%)
+*/
+
+/* Mobile */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    background: hsla(0, 100%, 100%, 1.0);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active, li.active_rT_logo, li.active_push {
+    background: hsla(26, 100%, 71%, 1.0);
+}
+
+nav li:hover {
+    background-color: hsla(52, 68%, 60%, 1.0);
+}
+
+main {
+    background: hsla(52, 68%, 89%, 1.0);
+    width: 100%;
+}
+
+.alert {
+    border: solid 1px black;
+}
+
+.error {
+    border: hsl(0, 100%, 25%);
+    color: hsl(0, 100%, 50%);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: hsla(0, 100%, 100%, 1.0);
+    margin-bottom: 15px;
+}
+
+.error ul {
+    list-style-type: none;
+}
+
+input.error {
+    border: hsl(0, 100%, 25%);
+}
+
+h2, h3 {
+    padding-top: 1rem;
+}
+
+section {
+    width: 100%;
+}
+
+section > h2 {
+    padding: 1rem;
+}
+
+section > p {
+    width: 100%;
+    max-width: 70ch;
+    text-align: justify;
+    padding: 1rem;
+}
+
+section > a {
+    margin: 0 auto 3rem;
+    display: block;
+    width: 30%;
+    padding: 0.5rem;
+    background: darkblue;
+    color: hsla(0, 100%, 100%, 1.0);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+section > a:hover {
+    background: blue;
+}
+
+form-group input {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-group has-succes{
+    color: blue;
+}
+
+.form-group has-error{
+    color: hsl(0, 100%, 50%);
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    border-bottom: solid 1px hsla(0, 0%, 0%, 1.0);
+}
+
+td, th {
+
+}
+
+tr:nth-child(even) {
+    background-color: hsla(52, 68%, 89%, 1.0);
+}
+
+footer {
+    text-align: center;
+    background: darkblue;
+    color: hsla(0, 100%, 100%, 1.0);
+}
+
+footer > p > a {
+    color: hsla(0, 100%, 100%, 1.0);
+    text-decoration: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+    section a {
+        margin: 0 1rem 3rem;
+        display: flow;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
+
+    .push, .active_push {
+        margin-left: auto;
+    }
+
+    form-group {
+        display: grid;
+        grid-template-columns: [label] auto [controls] auto;
+    }
+
+    form-group label, form-group fieldset {
+        grid-column: label;
+    }
+
+    form-group input, form-group button {
+        grid-column: controls;
+    }
+
+    form-group fieldset {
+        grid-column: span 2;
+    }
+}
