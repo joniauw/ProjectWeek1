@@ -28,7 +28,16 @@ public class Tekening {
         return naam;
     }
 
+    //voegt toe enkel als de vorm zijn omhullende binnen de bounds ligt, en als
     public void voegToe(Vorm vorm) {
+        Omhullende omhullende = vorm.getOmhullende();
+        if (omhullende.getMinimumX() < MIN_X
+        && omhullende.getMinimumY() < MIN_Y
+        && omhullende.getMaximumX() > MAX_X
+        && omhullende.getMinimumY() > MAX_Y)
+            throw new DomainException("de omhullende van deze vorm ligt niet binnen de boundaries van de tekening");
+        if (bevat(vorm))
+            throw new DomainException("deze vorm zit al in de tekening");
         vormen.add(vorm);
     }
 
@@ -40,23 +49,39 @@ public class Tekening {
         return vormen.size();
     }
 
-    public void verwijder(Vorm schouwNietInTekening) {
-        vormen.remove(schouwNietInTekening);
+    public void verwijder(Vorm v) {
+        vormen.remove(v);
     }
 
-    public boolean bevat(Vorm deur) {
-        return vormen.contains(deur);
+    public boolean bevat(Vorm v) {
+        return vormen.contains(v);
     }
 
+    //equalt enkel als de 2 tekeningen dezelfde vormen bevatten & hetzelfde aantal vormen bevatten
+    @Override
     public boolean equals(Object o){
-        if(!(o instanceof Vorm)){
+        if(!(o instanceof Tekening)){
             return false;
         }
+
+        //voor alle vormen: als deze vorm niet in de meegegeven tekening zit: niet gelijk
+        boolean bevatVormen = true;
         Tekening vorm = (Tekening) o;
-        return vorm.getAantalVormen() == vormen.size();
+        for(Vorm v : vormen) {
+            if (!vorm.bevat(v)) {
+                bevatVormen = false;
+            }
+        }
+
+        //bevat deze tekening zijn vormen & aantal vormen is gelijk = voldoende voorwaarden
+        return bevatVormen && vorm.getAantalVormen() == vormen.size();
     }
 
     public String toString(){
-        return "";
+        String s = "";
+        for (Vorm v : vormen) {
+            s += v.toString() + "\n";
+        }
+        return "Tekening:\n" + s;
     }
 }
