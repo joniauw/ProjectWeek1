@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="WebApp css + form">
-      <change afterPath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/deleteConfirmation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/header.jsp" afterDir="false" />
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Maven fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webapplicatie/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Webapplicatie/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/formulier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Webapplicatie/src/main/webapp/formulier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webapplicatie/target/classes/domain/Woord.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +52,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1qT3xXWKzLP7oiu22AutsRTLxwA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -312,7 +303,7 @@
       <workItem from="1617107177623" duration="154000" />
       <workItem from="1617107473173" duration="162000" />
       <workItem from="1617265782438" duration="10665000" />
-      <workItem from="1617280861936" duration="2556000" />
+      <workItem from="1617280861936" duration="4969000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -370,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617282132781</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Maven fix">
+      <created>1617283689892</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617283689893</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +394,8 @@
     <MESSAGE value="Story 9 + bugfixes - Doener Filip, denker Willem" />
     <MESSAGE value="THE END" />
     <MESSAGE value="WebApp css + form" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebApp css + form" />
+    <MESSAGE value="Maven fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maven fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
