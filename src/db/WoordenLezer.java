@@ -8,8 +8,9 @@ import java.util.Scanner;
 public class WoordenLezer {
     WoordenLijst gelezenLijst = new WoordenLijst();
 
-    public WoordenLezer(File woordTxt) {
+    public WoordenLezer(String woordTxt) {
         try {
+            File file = new File(woordTxt);
             Scanner scanner = new Scanner(woordTxt);
 
             while (scanner.hasNext()) {
@@ -23,7 +24,7 @@ public class WoordenLezer {
         return gelezenLijst;
     }
 
-    public String lees() {
-        return gelezenLijst.getRandomWoord();
+    public WoordenLijst lees() {
+        return gelezenLijst;
     }
 }
