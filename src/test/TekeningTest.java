@@ -100,6 +100,35 @@ public class TekeningTest {
         assertTrue(huis.equals(huisMetSchouw));
     }
 
+    @Test(expected = DomainException.class)
+    public void voegToe_moet_exception_gooien_als_2_keer_dezelfde_vorm(){
+        Tekening huis = createHuisZonderShouw();
+        huis.voegToe(huis.getVorm(0));
+    }
+
+    @Test(expected = DomainException.class)
+    public void voegToe_moet_exception_gooien_als_buiten_min_x(){
+        Tekening huis = createHuisZonderShouw();
+        huis.voegToe(new Cirkel(new Punt(-1, 0), 1));
+    }
+
+    @Test(expected = DomainException.class)
+    public void voegToe_moet_exception_gooien_als_buiten_min_y(){
+        Tekening huis = createHuisZonderShouw();
+        huis.voegToe(new Cirkel(new Punt(0, -1), 1));
+    }
+
+    @Test(expected = DomainException.class)
+    public void voegToe_moet_exception_gooien_als_buiten_max_x(){
+        Tekening huis = createHuisZonderShouw();
+        huis.voegToe(new Cirkel(new Punt(400, 0), 1));
+    }
+
+    @Test(expected = DomainException.class)
+    public void voegToe_moet_exception_gooien_als_buiten_max_y(){
+        Tekening huis = createHuisZonderShouw();
+        huis.voegToe(new Cirkel(new Punt(0, 400), 1));
+    }
 
     public Tekening createHuisMetSchouw() {
         Tekening huisMetSchouw = new Tekening("huisMetSchouw");

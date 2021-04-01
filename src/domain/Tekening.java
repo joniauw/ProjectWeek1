@@ -32,9 +32,9 @@ public class Tekening {
     public void voegToe(Vorm vorm) {
         Omhullende omhullende = vorm.getOmhullende();
         if (omhullende.getMinimumX() < MIN_X
-        && omhullende.getMinimumY() < MIN_Y
-        && omhullende.getMaximumX() > MAX_X
-        && omhullende.getMinimumY() > MAX_Y)
+        || omhullende.getMinimumY() < MIN_Y
+        || omhullende.getMaximumX() > MAX_X
+        || omhullende.getMaximumY() > MAX_Y)
             throw new DomainException("de omhullende van deze vorm ligt niet binnen de boundaries van de tekening");
         if (bevat(vorm))
             throw new DomainException("deze vorm zit al in de tekening");
