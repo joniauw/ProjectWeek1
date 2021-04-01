@@ -2,17 +2,16 @@ package ui;
 
 import domain.Punt;
 import domain.Rechthoek;
-import domain.Vorm;
+import domain.Tekening;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.text.Text;
 
 public class RechthoekApp {
     private Alert foutenboodschap = new Alert(Alert.AlertType.WARNING);
 
-    public RechthoekApp(GridPane root) {
+    public RechthoekApp(GridPane root, Tekening tekening) {
         Label lx = new Label("Geef de x coordinaat in voor de linkerbovenhoek van de rechthoek");
         TextField tfx = new TextField();
         Label ly = new Label("Geef de y coordinaat in voor de linkerbovenhoek van de rechthoek");
@@ -78,9 +77,7 @@ public class RechthoekApp {
                 Rechthoek rechthoek = new Rechthoek(new Punt(Integer.parseInt(tfx.getText()), Integer.parseInt(tfy.getText())), Integer.parseInt(tfb.getText()), Integer.parseInt(tfh.getText()));
                 root.getChildren().clear();
 
-                Text uitvoer = new Text();
-                uitvoer.setText(rechthoek.toString());
-                root.add(uitvoer, 0, 0);
+                new FiguurApp(root, tekening);
             }
             catch(Exception ex) {
                 tfh.clear();

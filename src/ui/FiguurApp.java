@@ -1,5 +1,6 @@
 package ui;
 
+import domain.Tekening;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ComboBox;
@@ -9,7 +10,7 @@ public class FiguurApp {
     private ComboBox<String> keuzeMenu;
     private ObservableList<String> mogelijkeFiguren;
 
-    public FiguurApp(GridPane root) {
+    public FiguurApp(GridPane root, Tekening tekening) {
         //observableArrayLst: veranderingen = JavaFx objecten updaten
         //normale lijst: veranderingen != JavaFx objecten updaten
         mogelijkeFiguren = FXCollections.observableArrayList("Cirkel", "Rechthoek", "Lijnstuk", "Driehoek");
@@ -21,13 +22,13 @@ public class FiguurApp {
             keuzeMenu.setVisible(false);
             if (keuzeMenu.getValue() != null) {
                 if (keuzeMenu.getValue().equals("Cirkel")) {
-                    new CirkelApp(root);
+                    new CirkelApp(root, tekening);
                 } else if (keuzeMenu.getValue().equals("Rechthoek")) {
-                    new RechthoekApp(root);
+                    new RechthoekApp(root, tekening);
                 } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
-                    new LijnStukApp(root);
+                    new LijnStukApp(root, tekening);
                 } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
-                    new DriehoekApp(root);
+                    new DriehoekApp(root, tekening);
                 }
             }
         });

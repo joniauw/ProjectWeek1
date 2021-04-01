@@ -2,16 +2,16 @@ package ui;
 
 import domain.LijnStuk;
 import domain.Punt;
+import domain.Tekening;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.text.Text;
 
 public class LijnStukApp {
     private Alert foutenboodschap = new Alert(Alert.AlertType.WARNING);
 
-    public LijnStukApp(GridPane root) {
+    public LijnStukApp(GridPane root, Tekening tekening) {
         Label lsx = new Label("Geef de x coordinaat in voor het startpunt van het lijnstuk");
         TextField tfsx = new TextField();
         Label lsy = new Label("Geef de y coordinaat in voor het startpunt van het lijnstuk");
@@ -76,10 +76,7 @@ public class LijnStukApp {
             try {
                 LijnStuk lijnStuk = new LijnStuk(new Punt(Integer.parseInt(tfsx.getText()), Integer.parseInt(tfsy.getText())),new Punt(Integer.parseInt(tfex.getText()), Integer.parseInt(tfey.getText())));
                 root.getChildren().clear();
-
-                Text uitvoer = new Text();
-                uitvoer.setText(lijnStuk.toString());
-                root.add(uitvoer, 0, 0);
+                new FiguurApp(root, tekening);
             }
             catch(Exception ex) {
                 tfsx.clear();

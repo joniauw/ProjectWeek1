@@ -19,13 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 13 - Doener Filip, denker Willem">
+    <list default="true" id="8dc1e4e8-ee68-4c2d-a5f2-4189b8b730d5" name="Default Changelist" comment="Story 9 + bugfixes - Doener Filip, denker Willem">
+      <change afterPath="$PROJECT_DIR$/src/domain/HangMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/HangManTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/FxHangManApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/FxTekenHangManApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/HangManApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TekeningHangMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Cirkel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Cirkel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Driehoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Driehoek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/LijnStuk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/LijnStuk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Rechthoek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Rechthoek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Vorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Vorm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/CirkelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirkelApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/DriehoekApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DriehoekApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FiguurApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FiguurApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FxFiguurApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LijnStukApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LijnStukApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/RechthoekApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/RechthoekApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TekenVenster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TekenVenster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TekeningApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TekeningApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +91,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -90,25 +102,53 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="domain" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WoordenLijstTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.FxHangManApp">
+    <configuration name="FxHangManApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.FxHangManApp" />
+      <module name="ProjectWeek1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FxTekenHangManApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.FxTekenHangManApp" />
+      <module name="ProjectWeek1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CirkelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangManTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectWeek1" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +157,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CirkelTest" />
+      <option name="MAIN_CLASS_NAME" value="test.HangManTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,22 +174,6 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.LijnStukTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LijnStukTest.equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectWeek1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LijnStukTest" />
-      <option name="METHOD_NAME" value="equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,10 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FxHangManApp" />
+        <item itemvalue="JUnit.HangManTest" />
+        <item itemvalue="Application.FxTekenHangManApp" />
         <item itemvalue="JUnit.WoordenLijstTest" />
         <item itemvalue="JUnit.LijnStukTest" />
-        <item itemvalue="JUnit.CirkelTest" />
-        <item itemvalue="JUnit.LijnStukTest.equals_moet_true_teruggeven_als_begin_en_eindpunt_omgewisseld_zijn" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +217,7 @@
       <workItem from="1617090007439" duration="9691000" />
       <workItem from="1617107177623" duration="154000" />
       <workItem from="1617107473173" duration="162000" />
+      <workItem from="1617265782438" duration="9748000" />
     </task>
     <task id="LOCAL-00001" summary="Robin De Koninck - Aaron Zwings&#10;Story 5">
       <created>1617093599606</created>
@@ -228,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617178322070</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Story 9 + bugfixes - Doener Filip, denker Willem">
+      <created>1617184198913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617184198913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +284,8 @@
     <MESSAGE value="Robin De Koninck - Aaron Zwings&#10;Story 5" />
     <MESSAGE value="Story 06 - Doener Filip, denker Filip met TODO" />
     <MESSAGE value="Story 13 - Doener Filip, denker Willem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Story 13 - Doener Filip, denker Willem" />
+    <MESSAGE value="Story 9 + bugfixes - Doener Filip, denker Willem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Story 9 + bugfixes - Doener Filip, denker Willem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

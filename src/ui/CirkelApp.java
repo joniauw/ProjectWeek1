@@ -52,8 +52,9 @@ public class CirkelApp {
             try {
                 Punt middelpunt = new Punt(Integer.parseInt(invoerX.getText()),Integer.parseInt(invoerY.getText()));
                 vorm = new Cirkel(middelpunt, Integer.parseInt(invoerStraal.getText()));
-                // tekening.voegToe(vorm);
+                tekening.voegToe(vorm);
                 cleanUp(root);
+                new FiguurApp(root, tekening);
 
 
             } catch (NumberFormatException ne){

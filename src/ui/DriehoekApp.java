@@ -2,16 +2,16 @@ package ui;
 
 import domain.Driehoek;
 import domain.Punt;
+import domain.Tekening;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.text.Text;
 
 public class DriehoekApp {
     private Alert foutenboodschap = new Alert(Alert.AlertType.WARNING);
 
-    public DriehoekApp(GridPane root) {
+    public DriehoekApp(GridPane root, Tekening tekening) {
         //label + textfield = een input voor de constructor van een Driehoek
         Label lax = new Label("Geef de x coordinaat in voor het eerste hoekpunt van de driehoek");
         TextField tfax = new TextField();
@@ -128,8 +128,7 @@ public class DriehoekApp {
                         new Punt(Integer.parseInt(tfcx.getText()), Integer.parseInt(tfcy.getText())));
 
                 root.getChildren().clear();
-                Text t = new Text(driehoek.toString());
-                root.add(t, 0, 0);
+                new FiguurApp(root, tekening);
             }
             catch(Exception ex) {
                 tfcy.clear();
