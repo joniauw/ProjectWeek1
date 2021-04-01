@@ -11,10 +11,12 @@ public class WoordenLezer {
     public WoordenLezer(String woordTxt) {
         try {
             File file = new File(woordTxt);
-            Scanner scanner = new Scanner(woordTxt);
+            Scanner scanner = new Scanner(file);
 
             while (scanner.hasNext()) {
-                gelezenLijst.voegToe(scanner.next());
+                String s = scanner.next();
+                System.out.println(s);
+                gelezenLijst.voegToe(s);
             }
         } catch (Exception fileNotFound) {
         }
