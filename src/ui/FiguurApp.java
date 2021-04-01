@@ -10,9 +10,13 @@ public class FiguurApp {
     private ObservableList<String> mogelijkeFiguren;
 
     public FiguurApp(GridPane root) {
+        //observableArrayLst: veranderingen = JavaFx objecten updaten
+        //normale lijst: veranderingen != JavaFx objecten updaten
         mogelijkeFiguren = FXCollections.observableArrayList("Cirkel", "Rechthoek", "Lijnstuk", "Driehoek");
         keuzeMenu = new ComboBox(mogelijkeFiguren);
         root.add(keuzeMenu, 0, 0);
+
+        //doel anonieme functie: kijken wat de waarde is en een app hiervoor opstarten
         keuzeMenu.setOnAction(eventKeuze -> {
             keuzeMenu.setVisible(false);
             if (keuzeMenu.getValue() != null) {
@@ -22,9 +26,9 @@ public class FiguurApp {
                     new RechthoekApp(root);
                 } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
                     new LijnStukApp(root);
+                } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
+                    new DriehoekApp(root);
                 }
-            } else if (keuzeMenu.getValue().equals("Lijnstuk")) {
-                new DriehoekApp(root);
             }
         });
     }

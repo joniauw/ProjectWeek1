@@ -5,6 +5,7 @@ public class HintLetter {
     boolean isGeraden;
 
     public HintLetter(char letter) {
+        if (letter == ' ') isGeraden = true;
         this.letter = letter;
     }
 
@@ -16,8 +17,11 @@ public class HintLetter {
         return letter;
     }
 
+    //zet de letters om naar lowercase & probeert ze te raden
     public boolean raad(char raadLetter) {
-        //ik wil niet dat het raden afhangt van ofdat een letter een hoofdletter is of niet, dus ik converteer dit via Character.toLowerCase() langs bijde kanten
+        //isGeraden == false & raadLetter == letter: return true
+        //isGeraden == true & raadLetter == letter: return false
+        //raadLetter != letter: return false
         raadLetter = Character.toLowerCase(raadLetter);
         if (raadLetter == Character.toLowerCase(letter) && !isGeraden) {
             isGeraden = true;
@@ -27,7 +31,7 @@ public class HintLetter {
     }
 
     public char toChar() {
-        //de ternary operator is een versimpeling van if/else om iets te setten. In dit geval bepaald deze operator wat er gereturnet wordt (de letter als isGeraden true is, _ als niet)
+        //hetzelfde als: if (isGeraden) return letter; else return '_';
         return isGeraden ? letter : '_';
     }
 }

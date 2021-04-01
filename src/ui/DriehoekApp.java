@@ -12,9 +12,7 @@ public class DriehoekApp {
     private Alert foutenboodschap = new Alert(Alert.AlertType.WARNING);
 
     public DriehoekApp(GridPane root) {
-        //het idee achter deze labels & textfields is dat het 1 per 1 de inputs aan u geeft, zodat je gemakkelijker kan begrijpen waar de error zit
-        //bvb: lax & tfax zijn de javafx onderdelen die instaan voor het aan de gebruiker duidelijk maken dat die de x coordinaat van de eerste driehoek meegeeft
-
+        //label + textfield = een input voor de constructor van een Driehoek
         Label lax = new Label("Geef de x coordinaat in voor het eerste hoekpunt van de driehoek");
         TextField tfax = new TextField();
         Label lay = new Label("Geef de y coordinaat in voor het eerste hoekpunt van de driehoek");
@@ -28,16 +26,13 @@ public class DriehoekApp {
         Label lcy = new Label("Geef de y coordinaat in voor het derde hoekpunt van de driehoek");
         TextField tfcy = new TextField();
 
+        //voeg eerste input pair too aan root
         root.add(lax, 0, 0);
         root.add(tfax, 1, 0);
 
-        //setOnAction is een functie die een anonieme functie als parameter neemt (of een lambda expressie, dat betekent hetzelfde)
-        //bij textfields wordt deze uitgeroepen als je op enter drukt terwijl die textbox gefocust is
-        //we roepen hierin aan dat ze de volgende kolom moeten weergeven, maar ook dat ze de geldigheid van de eerste kolom nakijken
-        //try/catch vangt exceptions up, en we weten dat parseInt een numberformatexception geeft indien het geen getal binnenkrijgt, dus die vangen we op & daar geven we dan een alert voor
-        //deze volgende paar lijnen zijn definities voor wat er gebeurt als er op enter wordt gedrukt, en ze zien er allemaal een beetje hetzelfde uit. parseInt check -> voeg toe of geef alert
-        //bij de laatste is het wat ingewikkelder, ik zal daar ook een voetnoot bijschrijven
-        //overal had je deze code al goed geschreven, enkel had je een aantal textfields door elkaar gehaald. Mijn naming scheme is nogal kortaf, dus als je deze wilt aanpassen naar meer verbose namen is dat ook goed
+        //anonieme functie als parameter: in dit geval een "public void <zonder_naam>(EventHandler e)"
+        //waarom? functies opslaan als data: heel handig! Gebruiker is niet benodigd om methodes te overriden in klassen, kan deze gewoon on the spot aanmaken
+        //keten van calls: tfax.onAction -> tfay.onAction -> tfbx.onAction -> tfby.onAction -> tfcx.onAction -> tfcy.onAction
 
         // 1ste x
         tfax.setOnAction(e -> {
@@ -124,10 +119,7 @@ public class DriehoekApp {
             }
         });
 
-        //hier proberen we een nieuwe driehoek aan te maken. In dit geval mag je try catch een beetje uitgebreider zijn, dat je gemakkelijker de fout kan opsporen, maar dit is niet persé nodig hier
-        //root.getChildren geeft je de directe lijst in root's gegevens terug, dus kan je deze clearen & root's children wipen
-        //de rest is vrij vanzelfsprekend
-        //indien er nog vragen zijn, stel ze mij of een coach gerust
+        //doel van deze anonieme functie: resultaat van inputs weergeven (deze staat aan de bodem van de keten van calls, dus er volgt niets op)
         // 3de y
         tfcy.setOnAction(e -> {
             try {

@@ -1,7 +1,13 @@
 package ui;
 
+import domain.Tekening;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+
 public class TekeningApp {
-    /*
+
     private Label naamTekeningLabel;
     private TextField invoerNaamTekening;
 
@@ -70,6 +76,4 @@ public class TekeningApp {
         alert.setContentText(s);
         alert.showAndWait();
     }
-
-     */
 }

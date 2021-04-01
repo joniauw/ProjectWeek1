@@ -59,7 +59,7 @@ public class Tekening implements Drawable {
         return vormen.contains(v);
     }
 
-    //equalt enkel als de 2 tekeningen dezelfde vormen bevatten & hetzelfde aantal vormen bevatten
+    //equalt enkel als de gegeven tekening dezelfde vormen bevat als deze & ze hetzelfde aantal vormen bevatten
     @Override
     public boolean equals(Object o){
         if(!(o instanceof Tekening)){
