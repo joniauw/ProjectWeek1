@@ -12,6 +12,7 @@ public class WoordenLezer {
         try {
             File file = new File(woordTxt);
             Scanner scanner = new Scanner(file);
+            scanner.useDelimiter("\n");
 
             while (scanner.hasNext()) {
                 String s = scanner.next();
