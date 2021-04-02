@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulier - </title>
+    <title>Formulier - HangingOut</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -23,22 +23,18 @@
             </ul>
         </div>
     </c:if>
-    <h2>Start counting right now</h2>
-    <form method="POST" action="Controller?command=add" novalidate>
+    <h2>Start hanging out right now!</h2>
+    <form title="Woord Toevoegen" method="POST" action="Controller?command=add" novalidate>
 
-        <p class="form-group ${nameClass}">
-            <label class="control-label" for="name">New player: </label>
-            <input type="text" id="name" name="name" value="${namePreviousValue}">
+        <p class="form-group ${woordClass}">
+            <label class="control-label" for="woord">Nieuw woord*: </label>
+            <input type="text" id="woord" name="woord" value="${woordPreviousValue}" required>
         </p>
 
-        <p class="form-group ${challengeClass}">
-            <label class="control-label" for="challenge">New challenge:</label>
-            <input type="text" id="challenge" name="challenge" value="${challengePreviousValue}">
-        </p>
-
-        <p class="form-group ${repClass}">
-            <label class="control-label" for="rep">New reps:</label>
-            <input type="number" id="rep" name="rep" class="error" value="${repPreviousValue}">
+        <p class="form-group ${niveauClass}">
+            <label class="control-label" for="niveau">Niveau:</label>
+            <input type="radio" id="expert" name="niveau" value="${niveauPreviousValue}">
+            <input type="radio" id="beginner" name="gender" value="male">
         </p>
 
         <input type="submit" value="Add">
